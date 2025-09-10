@@ -28,6 +28,7 @@ module.exports = {
     new HtmlWebpackPlugin({ template: "./src/index.html", inject: "body" }),
     new CopyWebpackPlugin({
       patterns: [
+        { from: "src/main.css", to: "main.css" },
         { from: "src/assets", to: "assets", noErrorOnMissing: true },
       ],
     }),
